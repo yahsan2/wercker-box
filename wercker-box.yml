@@ -1,5 +1,5 @@
 name: grunt
-version: 0.0.2
+version: 0.0.3
 inherits: wercker/ubuntu12.04-nodejs0.10@1.2.0
 type: main
 platform: ubuntu@12.04
@@ -24,10 +24,9 @@ script: |
   # remove the default installed optipng as it is too old
   sudo apt-get remove optipng
   sudo apt-get update
-  sudo apt-get install yum
 
   # lftp
-  sudo yum install lftp
+  sudo apt-get install lftp
   mkdir -p ~/.lftp
   echo "set ssl:verify-certificate no" > ~/.lftp/rc
 
