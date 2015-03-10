@@ -24,6 +24,7 @@ script: |
   # remove the default installed optipng as it is too old
   sudo apt-get remove optipng
   sudo apt-get update
+  sudo apt-get install yum
 
   # lftp
   sudo yum install lftp
