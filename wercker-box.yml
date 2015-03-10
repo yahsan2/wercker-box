@@ -27,8 +27,8 @@ script: |
 
   # lftp
   sudo yum install lftp
-  mkdir -p $HOME/.lftp
-  echo "set ssl:verify-certificate no" > $HOME/.lftp/rc
+  mkdir -p ~/.lftp
+  echo "set ssl:verify-certificate no" > ~/.lftp/rc
 
   # node.js
   sudo npm cache clean -f
